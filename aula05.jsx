@@ -6,8 +6,9 @@ class Aula05 extends Component{
         return(
             <View style={ styles.container}>
                 <View style={ styles.caixa1}>1</View>
-                <Text style={{ color:'white'}}>Joice acompanha a aula!</Text>
-                <View style={ styles.caixa2}>2</View>
+                <View style={ styles.caixa2}>
+                    <image/>
+                </View>
                 <View style={ styles.caixa3}>3</View>
             </View>
         );
@@ -23,18 +24,29 @@ const styles = StyleSheet.create({
     },
 
     caixa1: {
+        height: 100,
         backgroundColor: 'red',
-        height: 50,
-        width: 100,
+        alignItems: 'center',
+        justifyContent: 'center',
+        color: 'white',
+        fontSize: 20,
     },
 
     caixa2: {
-        backgroundColor: 'green',
-        flex: 1,
+       flex: 1, 
+       backgroundColor: 'green',
+       color: 'white',
+       alignItems: 'center',
+       justifyContent: 'center',
+       fontSize: 20
     },
 
     caixa3:{
         backgroundColor: 'blue',
-        height: 50,
+        height: 100,
+        alignItems: 'center',
+        justifyContent: 'center',
+        fontSize: 20,
+        color: 'white'
     }
 })
